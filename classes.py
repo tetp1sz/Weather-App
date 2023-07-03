@@ -3,8 +3,7 @@ import requests
 class Weather:
     def __init__(self, city):
         self.city = city
-        self.temp = 0
-        self.weather = self.date = self.detail_weather = ''
+        self.weather = self.date = self.detail_weather = self.temp = ''
         self.key = '144546767c7cb8e1782ee5d0a85b2196'
         self.res = requests.get('https://api.openweathermap.org/data/2.5/forecast', params={
             'q': city,
@@ -33,7 +32,6 @@ class Weather:
         return emoji
 
     def print_weather(self):
-        error = False
         try:
             for i in self.data['list']:
                 self.date = i['dt_txt']
