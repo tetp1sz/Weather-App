@@ -20,7 +20,7 @@ if __name__ == '__main__':
     enter_city = ctk.CTkLabel(master=window, text='Enter city:', width=100, height=25, font=('Microsoft YaHei Light', 18), bg_color='#adcbb5', text_color='#153626')
     entry_city = ctk.CTkEntry(master=window, width=175, height=30, corner_radius=10, font=('Microsoft YaHei Light', 18), bg_color='#adcbb5', fg_color='#7cc398', border_color='#62a77c', text_color='#153626')
     btn = ctk.CTkButton(master=window, text='Get weather', command=get_weather, width=120, height=32, border_width=0, corner_radius=10, font=('Microsoft YaHei UI Light', 16), bg_color='#adcbb5', fg_color='#7cc398', hover_color='#62a77c', text_color='#153626')
-    info_label = ctk.CTkLabel(master=window, text='', width=100, height=25, font=('Cascadia Mono Light', 18), bg_color='#adcbb5', text_color='#153626')
+    info_label = ctk.CTkLabel(master=window, text='', width=100, height=25, font=('Consolas', 18), bg_color='#adcbb5', text_color='#153626')
 
     info_label.place(relx=0.5, rely=0.7, anchor=tkinter.CENTER)
     btn.place(relx=0.5, rely=0.4, anchor=tkinter.CENTER)
